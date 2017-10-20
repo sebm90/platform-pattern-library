@@ -154,7 +154,11 @@
             }
 
             .listing.timeline {
+                -webkit-transform-style: preserve-3d;
+                -moz-transform-style: preserve-3d;
+                -ms-transform-style: preserve-3d;
                 transform-style: preserve-3d;
+                
 
                 @include media($medium) {
                     @include padding-left($lg-spacing);

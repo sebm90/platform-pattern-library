@@ -17,6 +17,10 @@
 @mixin translateZ-siblings($siblings) {
     @for $i from 1 through $siblings {
         &:nth-child(#{$i}) {
+            -webkit-transform: translateZ(-$i*1px);
+            -moz-transform: translateZ(-$i*1px);
+            -ms-transform: translateZ(-$i*1px);
+            -o-transform: translateZ(-$i*1px);
             transform: translateZ(-$i*1px);
         }
     }
